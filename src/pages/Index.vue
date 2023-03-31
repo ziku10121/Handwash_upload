@@ -1,28 +1,15 @@
 <template>
-  <q-page>
-    <div class="wrap column">
-      <Login></Login>
-      <Register></Register>
-    </div>
+  <q-page class="flex flex-center">
+    <img
+      alt="Quasar logo"
+      src="~assets/quasar-logo-vertical.svg"
+      style="width: 200px; height: 200px"
+    >
   </q-page>
 </template>
+
 <script>
-import Login from '../components/auth/login.vue';
-import Register from '../components/auth/register.vue';
 export default {
-  name:'Index',
-  components: {
-    Login,
-    Register
-  },
-  data(){
-    return{
-    }
-  }
+  name: 'PageIndex'
 }
 </script>
-<style scoped lang="scss">
-  .wrap{
-    height: 100vh;
-  }
-</style>

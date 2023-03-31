@@ -1,6 +1,6 @@
-# Quasar App (cms-handwash)
+# Quasar App (handwash-upload)
 
-cms system
+A Quasar Project
 
 ## Install the dependencies
 ```bash
@@ -22,20 +22,10 @@ yarn lint
 npm run lint
 ```
 
-
-### Format the files
-```bash
-yarn format
-# or
-npm run format
-```
-
-
-
 ### Build the app for production
 ```bash
 quasar build
 ```
 
 ### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js).
+See [Configuring quasar.conf.js](https://v1.quasar.dev/quasar-cli/quasar-conf-js).

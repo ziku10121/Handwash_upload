@@ -1,24 +1,20 @@
 
 const routes = [
   {
-    path: '/Login',
-    component: () => import('layouts/LoginLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/Index.vue') }
-    ]
-  },
-  {
     path: '/',
-    component: () => import('layouts/MainLayout.vue'),
+    component: () => import('layouts/Layout.vue'),
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') }
+      { path: '', component: () => import('pages/upload.vue') },
+      { path: '/upload', component: () => import('pages/upload.vue') },
+      { path: '/handwash', component: () => import('pages/handwash.vue') }
     ]
   },
+
   // Always leave this as last one,
   // but you can also remove it
   {
-    path: '/:catchAll(.*)*',
-    component: () => import('pages/ErrorNotFound.vue')
+    path: '*',
+    component: () => import('pages/Error404.vue')
   }
 ]
 
